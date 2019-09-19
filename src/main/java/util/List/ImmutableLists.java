@@ -10,7 +10,7 @@ public class ImmutableLists {
         //String[] array = {"Hello", "World!", null}; //Throw an exception because it has a null in the array
         String[] array = {"Hello", "World!"};
         List<String[]> listOf = List.<String[]>of(array); //Since Java 9
-        //listOf.add(array); //Throw Exception because we can't modify the list
+        //listOf.add(array); //Throw Exception because we can't modify the list.
         for (String[] element : listOf) {
             for (int i = 0; i < element.length; i++) {
                 System.out.println(element[i] + " ");
