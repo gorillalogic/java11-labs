@@ -14,8 +14,8 @@ public class MainLocalTime {
 
         localTimeExamples.basicExamples();
 
-        localTimeExamples.isNotimmutable();
 
+        localTimeExamples.isNotimmutable();
 
         // whizlabs.test1.question34
     }
