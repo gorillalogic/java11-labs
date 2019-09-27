@@ -1,4 +1,4 @@
-package whizlabs.test1;
+package whizlabs.test1.question3;
 
 public class Question3 {
 
