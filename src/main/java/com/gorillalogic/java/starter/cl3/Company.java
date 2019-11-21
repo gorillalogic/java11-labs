@@ -4,7 +4,8 @@ import lombok.*;
 
 import java.time.LocalDate;
 
-@Data()
+@Data
+@EqualsAndHashCode(exclude = {"id", "closeDate"})
 public class Company {
     private String id;
     private final String name;
