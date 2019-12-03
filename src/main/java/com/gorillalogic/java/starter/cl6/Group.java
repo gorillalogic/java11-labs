@@ -2,26 +2,26 @@ package com.gorillalogic.java.starter.cl6;
 
 import java.util.Arrays;
 
-public abstract class Group implements List{
+public abstract class Group implements List {
     protected final static int CAPACITY = 10;
-    protected Integer elements[];
+    protected Integer[] elements;
     protected int size;
 
     @Override
     public Integer get(int index) {
-        if (index>= size || index <0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size );
+        if (index >= size || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
         return elements[index];
     }
 
     @Override
     public void remove(int index) {
-        if (index>= size || index <0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size );
+        if (index >= size || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
-        for(int i=index; i<size-1; i++){
-            elements[i]=elements[i+1];
+        for (int i = index; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
         }
         size--;
         elements[size] = null;

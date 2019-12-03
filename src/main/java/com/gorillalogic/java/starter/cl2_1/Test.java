@@ -14,8 +14,8 @@ public class Test {
         gl.setId("GL-FOR-EVER");
         System.out.println(gl);
 
-        System.out.println("Equals: "+gorillaLogic.equals(gl));
-        System.out.println("Hashcode gorillaLogic: "+gorillaLogic.hashCode());
-        System.out.println("Hashcode gl: "+gl.hashCode());
+        System.out.println("Equals: " + gorillaLogic.equals(gl));
+        System.out.println("Hashcode gorillaLogic: " + gorillaLogic.hashCode());
+        System.out.println("Hashcode gl: " + gl.hashCode());
     }
 }

@@ -3,7 +3,7 @@ package com.gorillalogic.java.starter.cl6;
 import java.util.Arrays;
 
 public class ArrayList extends Group {
-   public ArrayList() {
+    public ArrayList() {
         elements = new Integer[CAPACITY];
     }
 

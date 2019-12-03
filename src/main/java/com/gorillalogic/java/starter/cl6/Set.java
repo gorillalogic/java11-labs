@@ -17,6 +17,7 @@ public class Set extends Group {
             elements[size++] = element;
         }
     }
+
     public boolean exists(Integer element) {
         for (int i = 0; i < size; i++) {
             if (element.equals(elements[i]))

@@ -4,15 +4,16 @@ import java.util.Arrays;
 
 public class List {
     private final static int CAPACITY = 10;
-    private Integer elements[];
+    private Integer[] elements;
     private int size;
 
     public List() {
         elements = new Integer[CAPACITY];
     }
+
     public Integer get(int index) {
-        if (index>= size || index <0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size );
+        if (index >= size || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
         return elements[index];
     }
@@ -25,18 +26,18 @@ public class List {
         elements[size++] = element;
     }
 
-    public void remove(int index){
-        if (index>= size || index <0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size );
+    public void remove(int index) {
+        if (index >= size || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
-        for(int i=index; i<size-1; i++){
-            elements[i]=elements[i+1];
+        for (int i = index; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
         }
         size--;
         elements[size] = null;
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
@@ -45,6 +46,6 @@ public class List {
         return "List{" +
                 "elements=" + Arrays.toString(elements) +
                 ", size=" + size +
-                ", capacity="+elements.length+'}';
+                ", capacity=" + elements.length + '}';
     }
 }

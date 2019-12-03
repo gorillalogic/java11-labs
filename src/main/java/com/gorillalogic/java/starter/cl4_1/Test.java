@@ -1,4 +1,5 @@
 package com.gorillalogic.java.starter.cl4_1;
+
 import java.time.LocalDate;
 
 public class Test {
@@ -10,8 +11,8 @@ public class Test {
         Company gl = gorillaLogic.toBuilder().closeDate(LocalDate.now()).build();
         System.out.println(gl);
 
-        System.out.println("Equals: "+gorillaLogic.equals(gl));
-        System.out.println("Hashcode gorillaLogic: "+gorillaLogic.hashCode());
-        System.out.println("Hashcode gl: "+gl.hashCode());
+        System.out.println("Equals: " + gorillaLogic.equals(gl));
+        System.out.println("Hashcode gorillaLogic: " + gorillaLogic.hashCode());
+        System.out.println("Hashcode gl: " + gl.hashCode());
     }
 }

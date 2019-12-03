@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Set {
     private final static int CAPACITY = 10;
-    private Integer elements[];
+    private Integer[] elements;
     private int size;
 
     public Set() {

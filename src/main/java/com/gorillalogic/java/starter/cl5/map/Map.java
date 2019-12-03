@@ -3,23 +3,24 @@ package com.gorillalogic.java.starter.cl5.map;
 import java.util.Arrays;
 
 public class Map {
-    private static final int CAPACITY=16;
+    private static final int CAPACITY = 16;
     private Entry[] elements;
     private int size;
 
     public Map() {
         elements = new Entry[CAPACITY];
     }
+
     public Integer get(String key) {
-       for(int i=0; i<size; i++)
-           if(key.equals(elements[i].key))
-               return elements[i].value;
+        for (int i = 0; i < size; i++)
+            if (key.equals(elements[i].key))
+                return elements[i].value;
         return null;
     }
 
     public String get(int index) {
-        if (index>= size || index <0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size );
+        if (index >= size || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
         return elements[index].toString();
     }
@@ -33,24 +34,24 @@ public class Map {
         elements[size++] = new Entry(key, value);
     }
 
-    public void remove(int index){
-        if (index>= size || index <0) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size );
+    public void remove(int index) {
+        if (index >= size || index < 0) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + size);
         }
-        for(int i=index; i<size-1; i++){
-            elements[i]=elements[i+1];
+        for (int i = index; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
         }
         size--;
         elements[size] = null;
     }
 
-    public void remove(String key){
+    public void remove(String key) {
         int index = indexOf(key);
-        if(index>=0)
+        if (index >= 0)
             remove(index);
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
@@ -67,13 +68,14 @@ public class Map {
         return "Map{" +
                 "elements=" + Arrays.toString(elements) +
                 ", size=" + size +
-                ",capacity="+elements.length+'}';
+                ",capacity=" + elements.length + '}';
     }
 
 
-    private class Entry{
+    private class Entry {
         final String key;
         Integer value;
+
         public Entry(String key, Integer value) {
             this.key = key;
             this.value = value;

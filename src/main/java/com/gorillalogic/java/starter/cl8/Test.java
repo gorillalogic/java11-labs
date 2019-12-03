@@ -1,20 +1,18 @@
 package com.gorillalogic.java.starter.cl8;
 
-import java.time.LocalDate;
-
 public class Test {
     public static void main(String[] args) {
-        try{
+        try {
             Company company = null;
-            try{
+            try {
                 company.getId();
-            } catch(NullPointerException e){
+            } catch (NullPointerException e) {
                 System.out.println(e);
             }
             CompanyValidator.validate(company);
-        } catch(InvalidArgumentException e){
+        } catch (InvalidArgumentException e) {
             System.out.println(e);
-        }finally {
+        } finally {
             System.out.println("We need to ensure this line will be executed always");
         }
         System.out.println("This is the end of the method");

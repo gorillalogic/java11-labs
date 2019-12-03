@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(13,15,9,25,25);
+        List<Integer> list = Arrays.asList(13, 15, 9, 25, 25);
         System.out.println(list);
 
         Iterator listIterator = list.iterator();
-        while(listIterator.hasNext())
+        while (listIterator.hasNext())
             System.out.println(listIterator.next());
 
         Set<Integer> set = new LinkedHashSet<>(list);

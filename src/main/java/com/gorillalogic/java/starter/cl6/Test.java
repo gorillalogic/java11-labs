@@ -14,17 +14,17 @@ public class Test {
         set.addAll(arrayList);
         System.out.println(set);
 
-        Group group = (Group) set;
+        Group group = set;
         group.add(10);
         System.out.println(group);
         System.out.println(set);
 
-        List list = (List) set;
+        List list = set;
         list.add(11);
         System.out.println(list);
         System.out.println(set);
 
-        Collection collection = (Collection) set;
+        Collection collection = set;
         collection.add(13);
         System.out.println(collection);
         System.out.println(set);
@@ -32,7 +32,7 @@ public class Test {
         //collection.exists(11);
         //collection.addAll(set);
         Object object = new Set();
-        System.out.println("object instanceof Collection: "+(object instanceof Collection));
-        System.out.println("object instanceof ArrayList: "+(object instanceof ArrayList));
+        System.out.println("object instanceof Collection: " + (object instanceof Collection));
+        System.out.println("object instanceof ArrayList: " + (object instanceof ArrayList));
     }
 }

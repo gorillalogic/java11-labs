@@ -10,9 +10,11 @@ import java.time.LocalDate;
 @EqualsAndHashCode(exclude = {"id", "closeDate"})
 @Builder(toBuilder = true)
 public class Company {
+    @NonNull
+    private final String name;
+    @NonNull
+    private final LocalDate startDate;
     private String id;
-    @NonNull private final String name;
-    @NonNull private final LocalDate startDate;
     private LocalDate closeDate;
 }
 

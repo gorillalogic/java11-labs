@@ -4,10 +4,15 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Company {
-    private String id;
     private final String name;
     private final LocalDate startDate;
+    private String id;
     private LocalDate closeDate;
+
+    public Company(String name, LocalDate startDate) {
+        this.name = name;
+        this.startDate = startDate;
+    }
 
     @Override
     public String toString() {
@@ -17,11 +22,6 @@ public class Company {
                 ", startDate=" + startDate +
                 ", closeDate=" + closeDate +
                 '}';
-    }
-
-    public Company(String name, LocalDate startDate) {
-        this.name = name;
-        this.startDate = startDate;
     }
 
     @Override

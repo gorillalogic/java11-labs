@@ -1,15 +1,16 @@
 package com.gorillalogic.java.starter.cl3;
 
-import lombok.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.time.LocalDate;
 
 @Data
 @EqualsAndHashCode(exclude = {"id", "closeDate"})
 public class Company {
-    private String id;
     private final String name;
     private final LocalDate startDate;
+    private String id;
     private LocalDate closeDate;
 }
 

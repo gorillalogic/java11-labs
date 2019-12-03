@@ -11,8 +11,8 @@ public class Test {
         Company gl = new Company("Gorilla Logic", LocalDate.of(2002, 1, 1));
         System.out.println(gl);
 
-        System.out.println("Equals: "+gorillaLogic.equals(gl));
-        System.out.println("Hashcode gorillaLogic: "+gorillaLogic.hashCode());
-        System.out.println("Hashcode gl: "+gl.hashCode());
+        System.out.println("Equals: " + gorillaLogic.equals(gl));
+        System.out.println("Hashcode gorillaLogic: " + gorillaLogic.hashCode());
+        System.out.println("Hashcode gl: " + gl.hashCode());
     }
 }
