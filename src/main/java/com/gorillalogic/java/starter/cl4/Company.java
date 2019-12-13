@@ -56,7 +56,7 @@ public class Company {
         }
 
         public Company build() {
-            return new Company(id, name, startDate, closeDate);
+            return new Company(name, startDate, id, closeDate);
         }
     }
 }
