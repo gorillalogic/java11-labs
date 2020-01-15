@@ -13,16 +13,17 @@ public class Test {
         Person.PersonAge age = new Person.PersonAge();
         System.out.println(age.getValue());
 
-        Person.PersonStatus anonymousStatus = person.new PersonStatus(){
+        Person.PersonStatus anonymousStatus = person.new PersonStatus() {
             public String getTranslation() {
-                EPersonStatus status=super.getValue();
+                EPersonStatus status = super.getValue();
                 return status == null ?
                         EPersonStatus.UNDEFINED.getTranslation() :
                         status.getTranslation();
             }
+
             @Override
             public String toString() {
-                return "AnonymousStatus {"+getTranslation()+"}";
+                return "AnonymousStatus {" + getTranslation() + "}";
             }
         };
         System.out.println(anonymousStatus);
@@ -32,9 +33,10 @@ public class Test {
             public long getRandomNumber() {
                 return new Date().getTime();
             }
+
             @Override
             public String toString() {
-                return "IRandom {"+getRandomNumber()+"}";
+                return "IRandom {" + getRandomNumber() + "}";
             }
         };
         System.out.println(random);

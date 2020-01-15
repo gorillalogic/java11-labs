@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4113e4f1-4d25-4916-8632-035327a6c19e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/EPersonStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/IRandom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/concurrency/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/concurrency/HelloRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/concurrency/HelloThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/concurrency/Safelock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/concurrency/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/generics/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/generics/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/generics/SortedPair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/generics/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/lambda/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/lambda/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/lambda/Predicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/lambda/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/lambda/Supplier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/lambda/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/optional/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/optional/Soundcard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/optional/USB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/examples/streams/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/EPersonStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/EPersonStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gorilla/java/intermediate/cl1/Test.java" afterDir="false" />
     </list>
@@ -20,9 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +75,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -64,6 +85,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gorilla.java.intermediate.cl2" />
       <recent name="com.gorilla.java.intermediate.cl1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -71,7 +93,59 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test (1)">
+    <configuration name="HelloThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gorilla.java.intermediate.examples.concurrency.HelloThread" />
+      <module name="java-intermediate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorilla.java.intermediate.examples.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Safelock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gorilla.java.intermediate.examples.concurrency.Safelock" />
+      <module name="java-intermediate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorilla.java.intermediate.examples.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gorilla.java.intermediate.examples.optional.Test" />
+      <module name="java-intermediate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorilla.java.intermediate.examples.optional.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gorilla.java.intermediate.examples.concurrency.Test" />
+      <module name="java-intermediate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorilla.java.intermediate.examples.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.gorilla.java.intermediate.cl1.Test" />
       <module name="java-intermediate" />
@@ -85,8 +159,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gorilla.java.intermediate.cl3.Test" />
+      <module name="java-intermediate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gorilla.java.intermediate.cl3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.HelloThread" />
+        <item itemvalue="Application.Safelock" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -125,6 +215,9 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/java11-labs" />
+    </ignored-roots>
     <MESSAGE value="Adding initial code to the second workshop." />
     <option name="LAST_COMMIT_MESSAGE" value="Adding initial code to the second workshop." />
   </component>
@@ -133,42 +226,61 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1576263728752" />
-    <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1576516584675">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="569" y="156" key="#com.intellij.ide.util.MemberChooser" timestamp="1577116060700">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="533" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1576516584675" />
-    <state x="295" y="55" key="CommitChangelistDialog2" timestamp="1576268833287">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="569" y="156" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1577116060700" />
+    <state x="571" y="323" width="407" height="224" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1577116110682">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="571" y="323" width="407" height="224" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1577116110682" />
+    <state x="499" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576681756552">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="499" y="181" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1576681756552" />
+    <state x="315" y="53" key="CommitChangelistDialog2" timestamp="1579061777628">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="295" y="55" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1576268833287" />
-    <state width="699" height="303" key="GridCell.Tab.0.bottom" timestamp="1576526335508">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="315" y="53" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1579061777628" />
+    <state width="1492" height="223" key="GridCell.Tab.0.bottom" timestamp="1578626513633">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="699" height="303" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576526335508" />
+    <state width="1492" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1578626513633" />
     <state width="699" height="215" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576269015524" />
-    <state width="699" height="303" key="GridCell.Tab.0.center" timestamp="1576526335506">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1492" height="223" key="GridCell.Tab.0.center" timestamp="1578626513633">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="699" height="303" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576526335506" />
+    <state width="1492" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1578626513633" />
     <state width="699" height="215" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576269015523" />
-    <state width="699" height="303" key="GridCell.Tab.0.left" timestamp="1576526335506">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1492" height="223" key="GridCell.Tab.0.left" timestamp="1578626513633">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="699" height="303" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576526335506" />
+    <state width="1492" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1578626513633" />
     <state width="699" height="215" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576269015522" />
-    <state width="699" height="303" key="GridCell.Tab.0.right" timestamp="1576526335507">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1492" height="223" key="GridCell.Tab.0.right" timestamp="1578626513633">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="699" height="303" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576526335507" />
+    <state width="1492" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1578626513633" />
     <state width="699" height="215" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576269015523" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1576514972620">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="236" y="85" key="SettingsEditor" timestamp="1576699183537">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576514972620" />
+    <state x="236" y="85" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1576699183537" />
     <state x="320" y="178" key="Vcs.Push.Dialog.v2" timestamp="1576268837777">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="178" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1576268837777" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1578419267282">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1578419267282" />
   </component>
   <component name="masterDetails">
     <states>
