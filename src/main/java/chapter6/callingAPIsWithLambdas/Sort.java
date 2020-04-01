@@ -29,7 +29,7 @@ public class Sort {
     /*
         There is not a sort method on Set or Map.
         Neither of those types has indexing, so
-        it wouldn't make sense to sort hem.
+        it wouldn't make sense to sort them.
      */
 
 }

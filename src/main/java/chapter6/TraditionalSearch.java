@@ -59,7 +59,7 @@ public class TraditionalSearch {
      */
 
     // Lambda                                       #Parameters
-    //() -> true                                        0
+    // () -> true                                       0
     // a -> a.startsWith("test")                        1
     // (String a) -> a.startsWith("test")               1
     // (a, b) -> a.startWith("test")                    2

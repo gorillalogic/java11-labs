@@ -36,7 +36,7 @@ public class ForEach {
         bunniesMap.put("floppy", 8);
         bunniesMap.put("hoppy", 1);
 
-        //It turns out the keySet() and values() methods each return a Ser.
+        //It turns out the keySet() and values() methods each return a Set.
         //Since we know how to use forEach() with a Set, this is easy.
         bunniesMap.keySet().forEach(b -> System.out.println(b));
         bunniesMap.values().forEach(b -> System.out.println(b));

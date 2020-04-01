@@ -26,7 +26,6 @@ public class ComparatorWithCompareMethod {
         Comparator<Integer> ints = (i1, i2) -> i1 - i2;
         System.out.println(compareIntegers(ints));
 
-
         /*
             Both sort in descending order
          */
