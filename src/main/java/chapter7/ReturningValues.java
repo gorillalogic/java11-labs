@@ -1,21 +1,21 @@
 package chapter7;
 
+import java.util.List;
+
 public class ReturningValues {
 	public static void main(String[] args) {
 		int number = 1;
-		String  letters = "abc";
-		number(number);
-		letters =  letters(letters);
-		System.out.println(number + letters);
+		Integer letters = 123;
+		//number(number);
+		letters(letters);
+		System.out.println( letters);
 	}
 	
-	public static int number(int number){
-		number++;
-		return number;
+	public static void number(List<String> number){
+		number.add("newString");
 	}
-	public static String letters(String letters){
-		letters += "d";
-		return letters;
+	public static void letters(Integer letters){
+		letters = 1;
 	}
 }
 

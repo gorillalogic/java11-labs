@@ -3,10 +3,6 @@ package chapter7;
 class DesignMethods {
 	
 	
-//	public static void main(String[] args) {
-//
-//	}
-	
 	/* Method declaration                        Example                                  Required
 	1. Access modifier               public/private/default/protected                       No
 	2. Optional specifier     final/static/abstract/synchronized/native/strictfp            No
@@ -51,13 +47,13 @@ class DesignMethods {
 	
 	//Practice 2.
 	
-		//public void walk1() {}
-		//public final  void walk2(){}
-		//public static final void walk3(){}
-		//public final static void walk4(){}
-		//public modifier void walk5(){}
-		//public void final walk6(){}
-		//final public void walk7(){}
+		/*public void walk1() {}*/
+		/*public final void walk2(){}*/
+		/*public static final void walk3(){}*/
+		/*public final static void walk4(){}*/
+		/*public modifier void walk5(){}*/
+		/*public void final walk6(){}*/
+		/*final public void walk7(){}*/
 	
 	//Return Type
 	/*
@@ -68,9 +64,9 @@ class DesignMethods {
 	//Practice 3.
 	
 		//public void walk1(){}
-		//public void walk2(){return:}
-		//public String  walk3(){return "";}
-		//public String  walk4(){}
+		//public void walk2(){return;}
+		//public String walk3(){return "";}
+		//public String walk4(){}
 		//public walk5(){}
 		//public String int walk6(){}
 		//String walk7(int a){if (a==4) return "";}
@@ -263,7 +259,7 @@ class DesignMethods {
 	//Practice 13 ReturningValues
 	
 	//Overloading Methods
-		//Occurs when methods have same name  bit different method Signatures(Parameters).
+		//Occurs when methods have same name  but different method Signatures(Parameters).
 		//Java looks for the most specific method parameter types.
 	
 	//Practice 14
@@ -278,8 +274,8 @@ class DesignMethods {
 	
 	//Autoboxing on overloading
 		//fly(3)
-		//public void fly(int numMiles{}
-		//public void fly(Integer numMiles{}
+		//public void fly(int numMiles){}
+		//public void fly(Integer numMiles){}
 	
 	//Reference types on overloading
 		/*public void fly(Object o){ System.out.println("Object");}
@@ -300,7 +296,7 @@ class DesignMethods {
 		// public void walk(List integers){} //Does not compile
 	//Arrays
 		//Example
-		//public static void walk(Integer[] ints) {}
+		//public static void walk(int[] ints) {}
 		//public static void walk(Integer[] integers) {}
 	
 	//Practice 15 too many conversion class
