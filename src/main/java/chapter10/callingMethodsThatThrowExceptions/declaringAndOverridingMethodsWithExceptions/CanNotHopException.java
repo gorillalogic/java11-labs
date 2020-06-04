@@ -1,0 +1,4 @@
+package chapter10.callingMethodsThatThrowExceptions.declaringAndOverridingMethodsWithExceptions;
+
+public class CanNotHopException extends Exception {
+}
