@@ -14,6 +14,6 @@ public class ExceptionInInitializerError {
     }
 
     public static void main(String[] args) {
-
+        ExceptionInInitializerError ex = new ExceptionInInitializerError();
     }
 }

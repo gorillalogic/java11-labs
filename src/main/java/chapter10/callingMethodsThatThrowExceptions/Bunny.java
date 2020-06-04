@@ -28,16 +28,15 @@ public class Bunny {
 //        }
     }
 
-    public void good() throws NoMoreCarrotsException {
-        eatCarrotWithOutException();
-    }
-
     /*
         Java knows that eatCarrotWithOutException() can't throw a checked
         exception -- which means there's no way for the catch block in bad()
         to be reached. In comparison, good() is free to declare other
         exceptions.
      */
+    public void good() throws NoMoreCarrotsException {
+        eatCarrotWithOutException();
+    }
 
     private void eatCarrotWithOutException() {
     }

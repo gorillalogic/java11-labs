@@ -24,12 +24,14 @@ public class AddingAFinallyBlock {
 //        }
 
         System.out.println(exceptions());
+
+        System.out.println(goHome());
     }
 
     private static void fall() {
     }
 
-    int goHome() {
+    static int goHome() {
         /*
             One problem with finally is that any realistic uses for it are out of the scope of the exam.
             A finally block is typically used to close resources such as files or databases --
@@ -39,7 +41,7 @@ public class AddingAFinallyBlock {
         try {
             //Optionally throw an exception here
             System.out.print("1");
-            return -1;
+            throw new Exception();
         } catch (Exception e) {
             System.out.print("2");
             return -2;
@@ -52,7 +54,7 @@ public class AddingAFinallyBlock {
             For the exam, you need to remember that a finally block will always be executed.
             That said, it may not complete successfully. If info is null, then the finally
             block would be executed, but it would stop on line info.printDetails();
-            and throw a NullPointerException. Lines 57-58 would not be executed.
+            and throw a NullPointerException. Lines 61-62 would not be executed.
          */
 //        } finally {
 //            info.printDetails();
@@ -70,9 +72,9 @@ public class AddingAFinallyBlock {
         String v = null;
         try {
             try {
-               result.append("before_");
-               v.length();
-               result.append("after_");
+                result.append("before_");
+                v.length();
+                result.append("after_");
             } catch (NullPointerException e) {
                 result.append("catch_");
                 throw new RuntimeException();

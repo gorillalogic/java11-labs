@@ -7,19 +7,15 @@ public class ThrowingAnException {
         Most likely, they will be exceptions that are provided with Java.
      */
 
-    /*
-        On the exam, you will see two types of code that result in an exception.
-        The first is code that's wrong. Here's an example:
-     */
 
     public static void main(String[] args) throws Exception {
-        String[] animals = new String[0];
-        System.out.println(animals[0]);
         /*
             This code throws an ArrayIndexOutOfBoundsException since the array has no
             elements. That means questions about exceptions can be hidden in questions
-            that appears to  be about something else.
+            that appears to be about something else.
          */
+        String[] animals = new String[0];
+        System.out.println(animals[0]);
 
         /*
             On the exam, many questions have a choice about not compiling and about
@@ -33,14 +29,14 @@ public class ThrowingAnException {
             You should know that an Exception is an Object. This means you can
             store in a variable and this is legal:
          */
-//        Exception e = new RuntimeException();
-//        throw e;
+        Exception e = new RuntimeException();
+        throw e;
 
         /*
             The exam might also try to trick you. Do you see why this code
             doesn't compile?
          */
-        //throw RuntimeException();
+//        throw RuntimeException();
 
         /*
             Let's take a look at another place the exam might try to trick you.
@@ -51,7 +47,6 @@ public class ThrowingAnException {
 //            throw new RuntimeException();
 //            throw new ArrayIndexOutOfBoundsException();
 //        } catch (Exception ex) {
-//
 //        }
     }
 }
