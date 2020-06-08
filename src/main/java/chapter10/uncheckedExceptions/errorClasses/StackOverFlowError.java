@@ -20,4 +20,7 @@ public class StackOverFlowError {
         than an infinite loop because at least Java will catch it and throw the error. With
         an infinite loop, Java just uses all your CPU until you can kill the program.
      */
+    public static void main(String[] args) {
+        doNotCodeThis(2);
+    }
 }
