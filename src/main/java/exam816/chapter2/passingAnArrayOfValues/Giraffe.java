@@ -24,6 +24,16 @@ public class Giraffe {
         //@Music(genres = "Blues", "Jazz") String favorite; // DOES NOT COMPILE
         //@Music(genres = ) String mostDisliked; // DOES NOT COMPILE
         //@Music(genres = null) String other; // DOES NOT COMPILE
-        @Music(genres = {}) String alternate; // DOES NOT COMPILE
+        @Music(genres = {}) String alternate;
+    }
+
+    /**
+     * Combining Shorthand Notations
+     */
+    class Capybara {
+        @Rhythm(value={"Swing"}) String favorite;
+        @Rhythm(value="R&B") String secondFavorite;
+        @Rhythm({"Classical"}) String mostDisliked;
+        @Rhythm("Country") String lastDisliked;
     }
 }
