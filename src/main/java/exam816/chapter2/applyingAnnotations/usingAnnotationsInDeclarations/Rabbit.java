@@ -1,4 +1,4 @@
-package exam816.chapter2.applyingAnnotations.usingAnnotationsinDeclarations;
+package exam816.chapter2.applyingAnnotations.usingAnnotationsInDeclarations;
 
 @LongEars
 @Soft @Cuddly public class Rabbit {
