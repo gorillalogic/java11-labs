@@ -18,3 +18,4 @@
 /.idea/modules/java11-labs.iml
 /.idea/java11-labs.iml
 /.idea/modules.xml
+/build/*
