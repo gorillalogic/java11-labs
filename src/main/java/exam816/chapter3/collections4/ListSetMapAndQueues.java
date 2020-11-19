@@ -15,7 +15,7 @@ public class ListSetMapAndQueues {
 	// orders elements in a specific order for processing. Ex: first-in, first-out.
 	Queue queue1 = new LinkedList();
 	
-	//Collection that maps keys to values, with no duplicate keys allowed.
+	//collection that maps keys to values, with no duplicate keys allowed.
 	Map map1 = new HashMap();
 	Map map2 = new TreeMap();
 	
@@ -162,14 +162,14 @@ class SetInterface {
 	//Don't want duplicate entries
 	//Check FIGURE 3.3 Example of a Set
 	
-	//Comparing Ser Implementations
+	//Comparing Set Implementations
 	public static void main(String[] args) {
 		
 		Set<Character> letters = Set.of('z', 'o', 'o');
 		Set<Character> copy = Set.copyOf(letters);
 		
 		Set set1 = new HashSet(); //hash table, keys are a hash, uses a hashcode to retrieve them more efficiently.
-		// Add and Read have cosntant times. Losses order of insertion.
+		// Add and Read have constant times. Losses order of insertion.
 		
 		System.out.println("------Hash Set-----");
 		Set<Integer> set = new HashSet<>();
