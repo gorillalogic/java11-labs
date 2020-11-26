@@ -346,7 +346,6 @@ class MapInterface {
 			System.out.println(favoritesPassNull);   // {Tom=Bus Tour, Sam=Skyride} *
 		
 		//Check Table 3.8 behavior of the merge method
-		
-		
+		//Check Table 3.9 and 3.10, Java Collections Framework types, Collection attributes
 	}
 }

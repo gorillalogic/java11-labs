@@ -1,8 +1,6 @@
 package exam816.chapter3.sortingData5;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
 
 public class Duck implements Comparable<Duck> {
 	private String name;
@@ -196,5 +194,55 @@ class Squirrel {
 	//Check Table 3.12 Helper static methods for building a comparator
 	//Check Helper default methods for building a Comparator
 }
+
+//Sorting And Searching
+
+class SortRabbits {
+	static class Rabbit {
+		int id;
+	}
+	
+	public static void main(String[] args) {
+		List<Rabbit> rabbits = new ArrayList<>();
+		rabbits.add(new Rabbit());
+		//Collections.sort(rabbits); // DOES NOT COMPILE
+		
+		Comparator<Rabbit> c = Comparator.comparingInt(r -> r.id);
+		Collections.sort(rabbits, c);
+		
+		
+		//*BinarySearch
+		List<Integer> list = Arrays.asList(6, 9, 1, 8);
+		Collections.sort(list); // [1, 6, 8, 9]
+		System.out.println(Collections.binarySearch(list, 6)); // 1
+		System.out.println(Collections.binarySearch(list, 3)); // -2
+		
+		var names = Arrays.asList("Fluffy", "Hoppy");
+		Comparator<String> c2 = Comparator.reverseOrder();
+		var index = Collections.binarySearch(names, "Hoppy", c2);
+		System.out.println(index);
+	}
+}
+
+class UseTreeSet {
+	static class Rabbit {
+		int id;
+	}
+	
+	public static void main(String[] args) {
+		Set<Duck> ducks = new TreeSet<>();
+		ducks.add(new Duck("Puddles"));
+		
+		//Set<Rabbit> rabbits = new TreeSet<>();
+		Set<Rabbit> rabbits = new TreeSet<>((r1, r2) -> r1.id-r2.id);
+		rabbits.add(new Rabbit());  // ClassCastException
+		
+		//Exception in thread "main" java.lang.ClassCastException:
+		//class Duck cannot be cast to class java.lang.Comparable
+		
+	}
+}
+
+
 
 
