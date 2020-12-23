@@ -11,4 +11,5 @@ public class CartProduct {
     @DBRef
     private Product product;
     private String userId;
+    private int quantity;
 }
