@@ -1,16 +1,13 @@
 package com.ws.spring.storeservice.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
-@Getter
-@Setter
+@Data
 @Document
 public class Product {
     @Id

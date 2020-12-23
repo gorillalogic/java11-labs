@@ -12,33 +12,33 @@ import org.springframework.web.bind.annotation.*;
 public class CartController {
     private final CartService cartService;
 
-    @GetMapping("/cart/{userId}")
+    @GetMapping("/{userId}")
     public ResponseEntity getCartContent(@PathVariable String userId){
         return ResponseEntity.ok(cartService.getCartProducts(userId));
     }
 
-    @PostMapping("/cart/{userId}")
+    @PostMapping("/{userId}")
     public ResponseEntity submitCartContent(@PathVariable String userId){
         cartService.submitCartContent(userId);
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/cart/product/{cartProductId}")
+    @GetMapping("/product/{cartProductId}")
     public ResponseEntity getCartProduct(@PathVariable String cartProductId){
         return ResponseEntity.ok(cartService.getCartProduct(cartProductId));
     }
 
-    @PostMapping("/cart/{userId}/product")
+    @PostMapping("/{userId}/product")
     public ResponseEntity addCartProduct(@RequestBody CartProductRequestDTO request){
         return ResponseEntity.ok(cartService.addCartProduct(request));
     }
 
-    @PutMapping("/cart/product/{cartProductId}")
+    @PutMapping("/product/{cartProductId}")
     public ResponseEntity updateCartProduct(@PathVariable String cartProductId, @RequestBody CartProductRequestDTO request){
         return ResponseEntity.ok(cartService.editCartProduct(cartProductId, request));
     }
 
-    @DeleteMapping("/cart/product/{cartProductId}")
+    @DeleteMapping("/product/{cartProductId}")
     public ResponseEntity deleteCartProduct(@PathVariable String cartProductId){
         cartService.deleteCartProduct(cartProductId);
         return ResponseEntity.ok().build();

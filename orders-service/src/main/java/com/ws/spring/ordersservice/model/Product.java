@@ -1,4 +1,4 @@
-package com.ws.spring.cartservice.model;
+package com.ws.spring.ordersservice.model;
 
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;

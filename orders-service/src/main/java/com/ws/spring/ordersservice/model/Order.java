@@ -1,21 +1,23 @@
-package com.ws.spring.cartservice.model;
+package com.ws.spring.ordersservice.model;
 
 import lombok.Data;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.validation.constraints.Min;
+import java.util.List;
 
 @Data
 @Document
-public class Product {
+public class Order {
     @Id
     private String id;
     @NotNull
-    private String name;
+    private String userId;
+    private List<OrderLine> lines;
     @Min(value = 0)
-    private int price;
-    @Min(value = 0)
-    private int quantity;
+    private int orderTotal;
+    private String address;
 }
