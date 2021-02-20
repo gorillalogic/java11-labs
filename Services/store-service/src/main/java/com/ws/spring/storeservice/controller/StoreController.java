@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class StoreController {
     private final StoreService storeService;
 
-    @GetMapping("/hello")
+    @GetMapping("/health")
     public ResponseEntity helloWorld(){
         return ResponseEntity.ok().build();
     }

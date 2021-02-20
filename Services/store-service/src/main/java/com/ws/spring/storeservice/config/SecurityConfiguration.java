@@ -1,6 +1,5 @@
 package com.ws.spring.storeservice.config;
 
-import com.ws.spring.userservice.config.AuthenticationConfigConstants;
 import com.ws.spring.userservice.filter.JWTAuthorizationFilter;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -13,7 +12,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable().authorizeRequests()
-//                .antMatchers(HttpMethod.POST, AuthenticationConfigConstants.SIGN_UP_URL).permitAll()
+                .antMatchers("/health").permitAll()
+                .antMatchers(HttpMethod.GET, "/product/**").permitAll()
                 //ROLE BASED AUTHENTICATION START
 //            .antMatchers("/api/library/book/**").hasAnyAuthority("USER", "ADMIN")
 //            .antMatchers("/api/library/author/**").hasAnyAuthority("ADMIN")
