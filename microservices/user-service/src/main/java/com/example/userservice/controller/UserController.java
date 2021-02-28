@@ -17,9 +17,4 @@ public class UserController {
         userService.createUser(userCreateRequest);
         return ResponseEntity.ok().build();
     }
-
-    @GetMapping("verify")
-    public ResponseEntity verify(){
-        return ResponseEntity.ok().build();
-    }
 }
