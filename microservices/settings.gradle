@@ -1,0 +1,8 @@
+rootProject.name = 'microservices'
+
+include 'cart-service'
+include 'orders-service'
+include 'store-service'
+include 'user-service'
+include 'common'
+
