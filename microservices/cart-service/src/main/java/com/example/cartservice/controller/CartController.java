@@ -12,6 +12,12 @@ import org.springframework.web.bind.annotation.*;
 public class CartController {
     private final CartService cartService;
 
+    @GetMapping("/health")
+    public ResponseEntity helloWorld(){
+        return ResponseEntity.ok().build();
+    }
+
+
     @GetMapping("/{userId}")
     public ResponseEntity getCartContent(@PathVariable String userId){
         return ResponseEntity.ok(cartService.getCartProducts(userId));

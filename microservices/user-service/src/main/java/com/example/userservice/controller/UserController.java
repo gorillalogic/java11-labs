@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
     private final UserService userService;
 
+    @GetMapping("/health")
+    public ResponseEntity helloWorld(){
+        return ResponseEntity.ok().build();
+    }
+
     @PostMapping("/api/user")
     public ResponseEntity createUser(@RequestBody UserCreateDTO userCreateRequest){
         userService.createUser(userCreateRequest);

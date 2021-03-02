@@ -13,6 +13,12 @@ import org.springframework.web.bind.annotation.*;
 public class OrdersController {
     private final OrdersService ordersService;
 
+    @GetMapping("/health")
+    public ResponseEntity helloWorld(){
+        return ResponseEntity.ok().build();
+    }
+
+
     @GetMapping("/{userId}")
     public ResponseEntity listOrders(@PathVariable String userId){
         return ResponseEntity.ok(ordersService.findOrders(userId));

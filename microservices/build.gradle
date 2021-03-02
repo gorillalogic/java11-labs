@@ -4,9 +4,12 @@ plugins {
     id 'java'
 }
 
+repositories {
+    mavenCentral()
+}
+
 allprojects {
     group = 'com.example'
-    version = '0.0.1-SNAPSHOT'
     sourceCompatibility = '11'
 }
 
@@ -49,4 +52,12 @@ configure (subprojects - project(":common")){
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testImplementation 'org.springframework.security:spring-security-test'
     }
+}
+
+bootJar {
+    enabled = false
+}
+
+bootBuildImage {
+    enabled = false
 }
