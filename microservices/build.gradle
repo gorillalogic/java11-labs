@@ -30,8 +30,12 @@ subprojects {
         compile 'org.springframework.boot:spring-boot-starter-web'
         compile 'org.springframework.boot:spring-boot-starter-validation'
         compile 'com.auth0:java-jwt:3.4.0'
+        compile "org.apache.kafka:kafka-clients:2.7.0"
+        compile "org.springframework.kafka:spring-kafka:2.5.11.RELEASE"
+//        compile 'com.google.guava:guava:20.0'
         compileOnly 'org.projectlombok:lombok'
         annotationProcessor 'org.projectlombok:lombok'
+        testCompile "org.springframework.kafka:spring-kafka-test:2.5.11.RELEASE"
     }
 
     configurations {
