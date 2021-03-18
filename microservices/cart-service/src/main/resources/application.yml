@@ -1,0 +1,13 @@
+server:
+  port: 8082
+  servlet:
+    contextPath: /api/cart
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@cluster0.xlxnk.mongodb.net/spring-practice?retryWrites=true&w=majority
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-serializer: org.apache.kafka.common.serialization.StringDeserializer

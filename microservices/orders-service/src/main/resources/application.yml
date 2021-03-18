@@ -1,0 +1,15 @@
+server:
+  port: 8081
+  servlet:
+    contextPath: /api/orders
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@cluster0.xlxnk.mongodb.net/spring-practice?retryWrites=true&w=majority
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_orders
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
