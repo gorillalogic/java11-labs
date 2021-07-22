@@ -1,1 +1,3 @@
-# java11-labs
+# GL-LAUNCHDARKLY-SDK-EXAMPLE
+
+> See LaunchDarklySdkExampleTest.class
