@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'com.github.sherter.google-java-format' version "0.8"
+}
+
+group 'com.gl.launchdarkly.poc.sdkexamples'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+ext.versions = [
+        "ld_sdk": "5.+",
+        "slf4j": "1.7.22",
+        "junit": "5.5.2"
+]
+
+dependencies {
+    compile("org.slf4j:slf4j-simple:${versions.slf4j}")
+    compile("com.launchdarkly:launchdarkly-java-server-sdk:${versions.ld_sdk}")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:${versions.junit}")
+}
