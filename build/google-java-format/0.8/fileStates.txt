@@ -1,2 +1,0 @@
-src/test/java/com/gl/launchdarkly/poc/LaunchDarklySdkExampleTest.java,1626911027599269000,3817,FORMATTED
-src/main/java/com/gl/launchdarkly/poc/FeatureFlagWithRule.java,1626910181643755000,1225,FORMATTED
